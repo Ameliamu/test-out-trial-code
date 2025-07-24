@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter's Paradise Pickups</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="favi2.png" />
+  
+  
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #222;
+      padding: 15px;
+    }
+
+    .flex div {
+      margin: 5px 15px;
+    }
+
+    .toolink {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toolink:hover {
+      text-decoration: underline;
+    }
+
+    .flex2 {
+      padding: 0;
+    }
+
+    .ddd {
+      height: 600px;
+      background-color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .ddd p {
+      font-size: 3rem;
+      font-family: 'Spicy Rice', cursive;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      font-family: 'Alfa Slab One', cursive;
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    .section-text {
+      text-align: center;
+      padding: 0 20px 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background-color: #f1f1f1;
+      gap: 30px;
+    }
+
+    .polaroid2 img {
+      max-width: 100%;
+      height: auto;
+      border: 5px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .about-us-div {
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .about-us-div p:first-child {
+      font-family: 'Alfa Slab One', cursive;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .about-us, .about-us2 {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .goal-section {
+      text-align: center;
+      background: white;
+      padding: 60px 20px;
+    }
+
+    .goal-section .about-us {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* SVG Logo */
+    svg {
+      width: 100%;
+      height: auto;
+      background: black;
+      color: white;
+    }
+
+    text {
+      fill: white;
+      font-family: 'Alfa Slab One', cursive;
+    }
+
+    /* Contact Icons */
+    .contact-icons {
+      background: #1a1a1d;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contact-icons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Footer */
+    .bottom-tool-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: #1a1a1d;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .bottom-tool-1-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .bottom-tool-1-text2,
+    .bottom-tool-1-text22 {
+      font-size: 0.9rem;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .ddd p {
+        font-size: 2rem;
+      }
+
+      .section-wrapper {
+        flex-direction: column;
+        padding: 40px 10px;
+      }
+
+      .about-us-div {
+        margin-top: 0 !important;
+        text-align: center;
+      }
+
+      .section-heading {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+ 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Peter's Paradise Pickups</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <div class="ddd">
+    <p><span>Born</span> <span style="color: green;">to</span> <span style="color: gold;">explore</span></p>
+  </div>
+
+  <!-- Story Section -->
+  <div class="section-heading">Our Story</div>
+  <div class="section-text">
+    <p>At Peter's Paradise Pickups, we believe every journey should be more than just a ride; it should be an experience to remember.</p>
+    <p>Our story began with Simon McInnis, a true adventurer at heart, whose love for Jamaica's vibrant culture and rich history sparked something bigger.</p>
+    <p>With a deep knowledge of every corner of the island, from the hidden gems of the countryside to the lively rhythm of Kingston's streets—we aim to share that magic with others.</p>
+  </div>
+
+  <!-- What are we -->
+  <div class="section-wrapper">
+    <div class="polaroid2">
+      <img src="WhatsApp Image 2025-07-10 at 5.18.27 PM (1).jpeg" alt="Simon McInnis" />
+    </div>
+    <div class="about-us-div">
+      <p>What are we?</p>
+      <p class="about-us">Peter's Paradise Pickups is a premier transportation service based in Jamaica, specializing in seamless and comfortable travel experiences.</p>
+    </div>
+  </div>
+
+  <!-- What do we offer -->
+  <div class="section-wrapper">
+    <div class="about-us-div">
+      <p style="color: green;">What do we offer?</p>
+      <p class="about-us2">We offer a range of services, including airport pickups and drop-offs, customized excursions, island tours, and cultural immersions.</p>
+    </div>
+    <div class="polaroid2">
+      <img src="WhatsApp Image 2025-07-10 at 5.18.27 PM.jpeg" alt="Tour Service" />
+    </div>
+  </div>
+
+  <!-- Adventure Awaits -->
+  <div class="section-wrapper">
+    <div class="polaroid2">
+      <img src="WhatsApp Image 2025-07-10 at 5.18.31 PM (1).jpeg" alt="Adventure Tour" />
+    </div>
+    <div class="about-us-div">
+      <p style="color: gold;">Adventure Awaits — Let's Hit the Road!</p>
+      <p class="about-us2">Whether you're looking to explore Jamaica's breathtaking landscapes or enjoy hassle-free transfers, Peter's Paradise Pickups is here to make it happen.</p>
+    </div>
+  </div>
+
+  <!-- Goal -->
+  <div class="goal-section">
+    <p class="section-heading">Our Goal</p>
+    <p class="about-us">Peter's Paradise Pickups aims to ensure a professional, friendly, and authentic journey, no matter the time or place.</p>
+  </div>
+
+  <!-- SVG Section -->
+  <svg viewBox="0 0 1800 400">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%" style="font-size: 190px;">Peters Paradise Pickups</text>
+    </symbol>
+    <g class="g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+
+  <!-- Contact Icons -->
+  <div class="contact-icons">
+    <a href="https://api.whatsapp.com/send?phone=18766147">
+      <img src="whatsapp.svg" alt="WhatsApp" />
+    </a>
+    <a href="https://maps.google.com/?q=18.4081111,-77.1011111">
+      <img src="google.svg" alt="Google Maps" />
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div class="bottom-tool-bar">
+    <div>
+      <p class="bottom-tool-1-text">Where To Find Us</p>
+      <p class="bottom-tool-1-text2">Simon McInnis</p>
+      <p class="bottom-tool-1-text2">Runaway Bay, St. Ann, Jamaica</p>
+      <p class="bottom-tool-1-text2">Grand Bahia Hotel, Ocho Rios</p>
+      <p class="bottom-tool-1-text2">JMCAN20</p>
+    </div>
+    <div>
+      <p class="bottom-tool-1-text">Explore</p>
+      <p><a href="index.html" class="toolink">Home</a></p>
+      <p><a href="about.html" class="toolink">About Us</a></p>
+      <p><a href="Locations-page1.html" class="toolink">Locations</a></p>
+      <p><a href="contactus.html" class="toolink">Contact Us</a></p>
+    </div>
+    <div>
+      <p class="bottom-tool-1-text">Open 24/7</p>
+      <p class="bottom-tool-1-text2">Monday – Sunday</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+  
+  
+
+  
+ 
+  
+
+ 
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
