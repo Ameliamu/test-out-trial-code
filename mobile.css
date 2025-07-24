@@ -1,0 +1,101 @@
+/* mobile.css */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero .para-3 {
+    font-size: 28px;
+  }
+
+  .grid-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-sidebar {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .service-text {
+    padding: 10px;
+  }
+
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .location-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .welcome .title-big {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .about-text, .about-image {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-image img {
+    width: 90%;
+    height: auto;
+  }
+
+  .cta-footer {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: rgb(129, 79, 79);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .contact-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bottom-tool-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+}
