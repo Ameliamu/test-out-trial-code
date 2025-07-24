@@ -12,7 +12,6 @@
       color: #fff;
       margin-right: 10px;
     }
-
     .navbar-dark .navbar-nav .nav-link:hover {
       text-decoration: underline;
     }
@@ -27,91 +26,15 @@
       align-items: center;
       text-align: center;
     }
-
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     }
-
     .hero p {
       font-size: 1.2rem;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     }
-
-    .bottom-bar {
-      background-color: #2c2c2c;
-      color: #fff;
-      font-weight: bold;
-      padding: 10px;
-      text-align: center;
-    }
-
-    /* Location Section */
-    .locations-grid {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      height: 600px;
-    }
-
-    .sidebar {
-      background-color: rgb(133, 0, 0);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 0;
-    }
-
-    .sidebar-title {
-      transform: rotate(-90deg);
-      font-size: 60px;
-      color: white;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .view-button {
-      padding: 15px 40px;
-      background-color: white;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    .content-grid {
-      display: grid;
-      grid-template-rows: 200px 1fr;
-    }
-
-    .services {
-      background-color: bisque;
-      padding: 20px;
-    }
-
-    .description {
-      padding: 20px;
-    }
-
-    .para-4 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .para-5 {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    .link2 {
-      font-weight: bold;
-      color: darkred;
-      text-decoration: underline;
-    }
-
-    /* Arrow style placeholder */
     .arrow {
       display: inline-block;
       width: 0;
@@ -122,47 +45,212 @@
       margin-top: 10px;
     }
 
-    /* Responsive Styles */
+    .bottom-bar {
+      background-color: #2c2c2c;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Locations Grid Section */
+    .locations-grid {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      height: 600px;
+    }
+    .sidebar {
+      background-color: rgb(133, 0, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .sidebar-title {
+      transform: rotate(-90deg);
+      font-size: 60px;
+      color: white;
+      font-weight: bold;
+      margin: 0;
+    }
+    .view-button {
+      padding: 15px 40px;
+      background-color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-rows: 200px 1fr;
+    }
+    .services, .description {
+      padding: 20px;
+    }
+    .services {
+      background-color: bisque;
+    }
+    .para-4 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .para-5 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .link2 {
+      font-weight: bold;
+      color: darkred;
+      text-decoration: underline;
+    }
+
+    /* Featured Locations */
+    .featured-header {
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: 'La Belle Aurore', cursive;
+      background-color: rgba(80, 42, 42, 0.945);
+      color: white;
+      padding: 30px 10px;
+    }
+    .subheader {
+      text-align: center;
+      font-family: 'Alfa Slab One', cursive;
+      font-size: 2rem;
+      background-color: rgba(240, 240, 240, 0.945);
+      font-weight: bolder;
+      padding: 20px;
+    }
+
+    .featured-locations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 30px;
+      background-color: rgba(240, 240, 240, 0.945);
+    }
+
+    .location-card {
+      text-align: center;
+    }
+
+    .location-card img {
+      height: auto;
+      max-width: 100%;
+      border: 5px solid white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .location-title {
+      font-family: 'Alfa Slab One', cursive;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .location-desc {
+      margin: 10px auto 0 auto;
+      width: 90%;
+      max-width: 300px;
+      font-size: 16px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    /* About Section */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgb(129, 37, 37);
+      padding: 40px 20px;
+    }
+    .about-text, .about-image {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+      color: white;
+    }
+    .para-7 {
+      background: rgb(129, 79, 79);
+      padding: 10px 20px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .about-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Contact Icons */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: rgb(26, 26, 29);
+      padding: 20px 0;
+    }
+    .contact-icons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Footer */
+    .bottom-tool-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: rgb(26, 26, 29);
+      color: white;
+      padding: 30px 20px;
+    }
+    .bottom-tool-1-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .bottom-tool-1-text2, .bottom-tool-1-text22 {
+      font-size: 0.9rem;
+      margin: 4px 0;
+    }
+    .toolink {
+      color: white;
+      text-decoration: none;
+    }
+    .toolink:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Adjustments */
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
       .locations-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
         height: auto;
       }
-
       .sidebar {
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
-        padding: 10px;
       }
-
       .sidebar-title {
         transform: none;
         font-size: 32px;
-        margin: 0;
       }
-
-      .view-button {
-        margin-top: 0;
-        padding: 10px 20px;
-      }
-
       .content-grid {
         grid-template-rows: auto auto;
       }
     }
   </style>
 </head>
-
 <body>
 
   <!-- Navigation -->
@@ -183,7 +271,7 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div>
       <h1>Peter's Paradise Pickups</h1>
@@ -192,16 +280,13 @@
     </div>
   </section>
 
-  <!-- Bottom Bar -->
-  <div class="bottom-bar">
-    LET US TAKE YOU TO PARADISE, ONE RIDE AT A TIME!
-  </div>
+  <div class="bottom-bar">LET US TAKE YOU TO PARADISE, ONE RIDE AT A TIME!</div>
 
-  <!-- Locations Section -->
+  <!-- Locations Grid -->
   <div class="locations-grid">
     <div class="sidebar">
       <p class="sidebar-title">Locations</p>
-      <button class="view-button" onclick="location.href='Locations-page1.html'">View All</button>
+      <a class="view-button" href="Locations-page1.html">View All</a>
     </div>
     <div class="content-grid">
       <div class="services">
@@ -221,6 +306,84 @@
         <a class="link2" href="Locations-page1.html">Locations</a>
       </div>
     </div>
+  </div>
+
+  <!-- Featured Locations -->
+  <div class="featured-header">Welcome to Peter's Paradise Pickups</div>
+  <div class="subheader">Frequently Visited Locations</div>
+  <div class="featured-locations">
+    <div class="location-card">
+      <p class="location-title">Dunn's River</p>
+      <a href="contactus.html"><img src="2 (2).png" alt="Dunn's River"></a>
+      <p class="location-desc">This breathtaking waterfall flows smoothly over bedded limestone rocks, creating pools that visitors can climb, explore, and <span class="bold">commit to memory.</span></p>
+    </div>
+    <div class="location-card">
+      <p class="location-title">Sharkies</p>
+      <a href="contactus.html"><img src="2 (1).png" alt="Sharkies"></a>
+      <p class="location-desc">Sharkies is another unforgettable location that is a <span class="bold">must-visit</span> when exploring Jamaica.</p>
+    </div>
+    <div class="location-card">
+      <p class="location-title">Bob Marley Museum</p>
+      <a href="contactus.html"><img src="2 (3).png" alt="Bob Marley Museum"></a>
+      <p class="location-desc">Located in Kingston, the Bob Marley Museum is the former residence and recording studio of reggae icon <span class="bold">Bob Marley.</span></p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <div class="about-text">
+      <div class="para-7">Hey! I'm Simon McInnis</div>
+      <p class="para-8">Better known as Peter.</p>
+      <p class="para-8">I'm a fun, adventure-loving individual.</p>
+      <p class="para-8">My knowledge of Jamaica exceeds the usefulness of a map.</p>
+      <p class="para-8">I've experienced the rhythm of all its streets,</p>
+      <p class="para-8">I've tasted the flavors of every parish.</p>
+      <p class="para-8">A trip with me is insightful and adventurous.</p>
+      <a href="about.html" class="view-button">Find out about us</a>
+    </div>
+    <div class="about-image">
+      <img src="WhatsApp Image 2025-07-10 at 5.18.29 PM (1).jpeg" alt="Simon McInnis">
+    </div>
+  </div>
+
+  <!-- Contact Icons -->
+  <div class="contact-icons">
+    <a href="https://api.whatsapp.com/send?phone=18766147">
+      <img src="whatsapp.svg" alt="WhatsApp">
+    </a>
+    <a href="https://maps.google.com/?q=18.4081111,-77.1011111">
+      <img src="google.svg" alt="Google Maps">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div class="bottom-tool-bar">
+    <div>
+      <p class="bottom-tool-1-text">Where To Find Us</p>
+      <p class="bottom-tool-1-text2">Simon McInnis</p>
+      <p class="bottom-tool-1-text2">Runaway Bay, St. Ann, Jamaica</p>
+      <p class="bottom-tool-1-text2">Grand Bahia Hotel, Ocho Rios</p>
+      <p class="bottom-tool-1-text2">JMCAN20</p>
+    </div>
+    <div>
+      <p class="bottom-tool-1-text">Explore</p>
+      <p><a href="index.html" class="toolink">Home</a></p>
+      <p><a href="about.html" class="toolink">About Us</a></p>
+      <p><a href="Locations-page1.html" class="toolink">Locations</a></p>
+      <p><a href="contactus.html" class="toolink">Contact Us</a></p>
+    </div>
+
+    <div>
+    <p class="bottom-tool-1-text">Open 24/7</p>
+    <P class="bottom-tool-1-text2" >Monday</P>
+    <P class="bottom-tool-1-text2">Tuesday</P>
+    <p class="bottom-tool-1-text2" >Wednesday</p>
+    <p class="bottom-tool-1-text2" >Thursday</p>
+    <p class="bottom-tool-1-text2">Friday</p>
+    <p class="bottom-tool-1-text2" >Saturday</p>
+    <p class="bottom-tool-1-text2"> Sunday </p>
+    </div>
+
   </div>
 
   <!-- Bootstrap JS -->
