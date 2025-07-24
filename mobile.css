@@ -1,25 +1,13 @@
 @media (max-width: 768px) {
-
-  body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
   .flex {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     padding: 10px 0;
-  }
-
-  .flex2 {
-    display: block;
+    gap: 10px;
   }
 
   .flex3 {
-    height: auto;
     padding: 20px;
     text-align: center;
   }
@@ -39,111 +27,17 @@
   .scroll-container {
     font-size: 14px;
     padding: 10px;
-  }
-
-  /* Location + Services */
-  [style*="grid-template-columns: 300px 1fr"] {
-    display: block !important;
-    height: auto !important;
-  }
-
-  [style*="rotate(-90deg)"] {
-    transform: none !important;
-    margin: 20px auto;
-    font-size: 32px !important;
     text-align: center;
   }
 
-  .View {
-    display: block;
-    margin: 20px auto !important;
+  .scroll-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 8s linear infinite;
   }
 
-  [style*="grid-template-rows: 200px 1fr"] {
-    padding: 10px;
-  }
-
-  /* Welcome + Feature */
-  [style*="font-size: 100px"] {
-    font-size: 32px !important;
-    padding: 20px;
-  }
-
-  [style*="font-size: 40px"] {
-    font-size: 24px !important;
-  }
-
-  [style*="grid-template-columns: 635px"] {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .polaroid img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .para-9 {
-    margin: 0 auto !important;
-    width: 90% !important;
-    text-align: center;
-  }
-
-  /* About Simon Section */
-  [style*="grid-template-columns: 900px 1fr"] {
-    display: block !important;
-  }
-
-  [style*="margin-left: 450px"] {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center;
-  }
-
-  [style*="width: 200px"] {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  [style*="img"] {
-    display: block;
-    margin: 20px auto;
-    max-width: 90%;
-    height: auto !important;
-  }
-
-  /* Call to Action */
-  [style*="justify-content: center"] a {
-    display: inline-block;
-    background-color: rgb(129, 79, 79);
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 10px auto;
-    font-size: 18px;
-  }
-
-  /* Footer Icons */
-  [style*="height: 100px"] {
-    flex-direction: column !important;
-    align-items: center !important;
-    height: auto !important;
-    padding: 20px 0;
-  }
-
-  .img-1 {
-    margin: 10px auto !important;
-    width: 40px !important;
-    height: 40px !important;
-  }
-
-  /* Footer Text Columns */
-  .bottom-tool-bar {
-    display: block !important;
-    text-align: center;
-    padding: 20px;
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
   }
 }
