@@ -41,3 +41,35 @@
     100% { transform: translateX(-100%); }
   }
 }
+
+@media (max-width: 768px) {
+  /* Hamburger button visible on mobile */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Stack the nav menu */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #29292E;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  /* Menu visible when open */
+  .nav-menu.open {
+    display: flex;
+    max-height: 300px; /* adjust if you add more links */
+  }
+
+  .nav-menu a {
+    padding: 12px 20px;
+    border-top: 1px solid #3a3a3f;
+  }
+}

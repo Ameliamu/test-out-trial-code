@@ -12,50 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lobster&family=Luckiest+Guy&family=Manufacturing+Consent&family=Special+Gothic+Expanded+One&family=Style+Script&display=swap" rel="stylesheet">
-
-  <style>
-    .hamburger {
-      display: none;
-      font-size: 30px;
-      cursor: pointer;
-      padding: 10px 20px;
-    }
-
-    .mobile-nav {
-      display: none;
-      flex-direction: column;
-      background-color: #222;
-      padding: 10px;
-    }
-
-    .mobile-nav a {
-      color: white;
-      padding: 10px 0;
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .flex {
-        display: none;
-      }
-
-      .hamburger {
-        display: block;
-      }
-
-      .mobile-nav.show {
-        display: flex;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- Hamburger icon for mobile -->
-  <div class="hamburger" onclick="toggleMenu()">☰ Menu</div>
-
-  <!-- Original desktop navigation -->
   <div class="flex">
     <div><p><a href="index.html" class="toolink" style="text-decoration: underline; font-weight: bold;">Home</a></p></div>
     <div><p><a href="about.html" class="toolink">About Us</a></p></div>
@@ -63,34 +23,31 @@
     <div><p><a href="contactus.html" class="toolink" style="font-weight: 500;">Contact Us</a></p></div>
   </div>
 
-  <!-- Mobile dropdown navigation -->
-  <div class="mobile-nav" id="mobileNav">
-    <a href="index.html" class="toolink">Home</a>
-    <a href="about.html" class="toolink">About Us</a>
-    <a href="Locations-page1.html" class="toolink">Locations</a>
-    <a href="contactus.html" class="toolink">Contact Us</a>
-  </div>
-
-  <!-- Your content starts here -->
   <div class="flex2">
-    <div style="display: grid; grid-template-rows: 800px 1fr; ">
+    <div style="display: grid; grid-template-rows: auto 1fr;">
+
       <div class="flex3">
         <div class="main-message-div">
+
           <div class="para-div">
             <p class="para-3">Peter's Paradise Pickups</p>
           </div>
-          <P class="para-6">Learn more</P>
+
+          <p class="para-6">Learn more</p>
+
           <div class="arrow-div">
             <p><i class="arrow down" style="color: aliceblue;"></i></p>
           </div>
+
         </div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr ; height: 50px; background-color: rgb(41, 41, 46);">
+      <div style="display: grid; grid-template-columns: 1fr; height: 50px; background-color: rgb(41, 41, 46);">
         <div class="scroll-container">
           <div class="scroll-text">LET US TAKE YOU TO PARADISE, ONE RIDE AT A TIME!</div>
         </div>
       </div>
+
     </div>
   </div>
 
