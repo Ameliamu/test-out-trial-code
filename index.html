@@ -16,6 +16,8 @@
 
 <body>
 
+  <button class="nav-toggle">☰ Menu</button>
+
   <div class="flex">
     <div><p><a href="index.html" class="toolink" style="text-decoration: underline; font-weight: bold;">Home</a></p></div>
     <div><p><a href="about.html" class="toolink">About Us</a></p></div>
@@ -52,11 +54,13 @@
   </div>
 
   <script>
-    function toggleMenu() {
-      const nav = document.getElementById("mobileNav");
-      nav.classList.toggle("show");
-    }
-  </script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const flexMenu = document.querySelector('.flex');
+
+  navToggle.addEventListener('click', () => {
+    flexMenu.classList.toggle('show-menu');
+  });
+</script>
 
 </body>
 </html>
