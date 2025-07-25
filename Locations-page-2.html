@@ -14,15 +14,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(53, 53, 53); 
+    animation-name: jamaica2;
+    animation-duration: 12s;
+    animation: jamaica2 12s infinite;
   }
 
   .intro-text .para-1 {
     font-size: 2rem;
+     color: white;
+    animation-name: jamaica3;
+    animation-duration: 12s;
+    animation: jamaica3 12s infinite;
   }
 
   .intro-text .para-2 {
     font-size: 2.5rem;
     font-weight: bold;
+     color: white;
+    animation-name: jamaica3;
+    animation-duration: 12s;
+    animation: jamaica3 12s infinite;
   }
 
   .location-title {
@@ -92,6 +104,25 @@
     .toolink:hover {
       text-decoration: underline;
     }
+
+@keyframes jamaica {
+    25% {color: black;}
+    50% {color: rgb(0, 194, 26);}
+    100% {color: rgb(255, 230, 0);}
+}
+
+@keyframes jamaica2 {
+  25%   {background-color:rgb(0, 0, 0); left:0px; top:0px;}
+  50%   {background-color:rgb(0, 133, 29); left:200px; top:0px;}
+  100%  {background-color:gold; left:0px; top:0px;}
+}
+
+@keyframes jamaica3 {
+  25%  {color:rgb(255, 255, 255); left:200px; top:0px;}
+  50%  {color:rgb(0, 0, 0); left:200px; top:200px;}
+  100% {color:rgb(0, 0, 0); left:0px; top:0px;}
+}
+
 </style>
 
 </head>
@@ -107,10 +138,10 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Locations-page-1.html">Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact-us.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -163,7 +194,7 @@
 
   <!-- Next Page Button -->
   <div class="button-div">
-    <button class="Next-page-button" onclick="location.href='Location-page-1.html'">Go back</button>
+    <button class="Next-page-button" onclick="location.href='Locations-page-1.html'">Go back</button>
   </div>
 
   <!-- Footer -->
@@ -181,9 +212,9 @@
         <div class="col-12 col-md-4 mb-4 mb-md-0">
           <p class="bottom-tool-1-text">Explore</p>
           <p class="bottom-tool-1-text22"><a href="index.html" class="toolink">Home</a></p>
-          <p class="bottom-tool-1-text22"><a href="about.html" class="toolink">About us</a></p>
-          <p class="bottom-tool-1-text22"><a href="Locations-page1.html" class="toolink">Locations</a></p>
-          <p class="bottom-tool-1-text22"><a href="contactus.html" class="toolink">Contact us</a></p>
+          <p class="bottom-tool-1-text22"><a href="About-us.html" class="toolink">About us</a></p>
+          <p class="bottom-tool-1-text22"><a href="Locations-page-1.html" class="toolink">Locations</a></p>
+          <p class="bottom-tool-1-text22"><a href="Contact-us.html" class="toolink">Contact us</a></p>
         </div>
         <div class="col-12 col-md-4">
           <p class="bottom-tool-1-text">Open 24/7</p>
