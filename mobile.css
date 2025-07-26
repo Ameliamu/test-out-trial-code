@@ -1,15 +1,125 @@
+
 @media (max-width: 600px) {
+  body {
+    max-width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
 
-    .body {
-        max-width: 100%;
-        
+  .flex {
+    flex-direction: column; /* Drop down instead of float */
+    align-items: flex-start; /* Align menu items to the left (optional) */
+    gap: 10px; /* Add spacing between items */
+  }
 
-    }
-
-.flex {
-    flex-direction: row;
-    justify-content: center ;
-
+  .toolink {
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+  }
 }
+
+.locations-wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: auto;
+  min-height: 600px;
 }
+
+/* Sidebar */
+.locations-sidebar {
+  background-color: rgb(133, 0, 0);
+  position: relative;
+  text-align: center;
+}
+
+.locations-title {
+  transform: rotate(-90deg);
+  font-size: 60px;
+  margin: 50px -190px;
+  color: white;
+  font-weight: bold;
+}
+
+.view-button {
+  margin-top: 300px;
+  margin-left: 100px;
+  padding: 15px 40px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #ccc;
+}
+
+/* Main Content */
+.locations-content {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+.services-box {
+  background-color: bisque;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.description-box {
+  padding: 20px;
+}
+
+.description-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.link2 {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .locations-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .locations-sidebar {
+    padding: 20px 0;
+  }
+
+  .locations-title {
+    transform: none;
+    margin: 0;
+    font-size: 36px;
+  }
+
+  .view-button {
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+
+  .locations-content {
+    grid-template-rows: auto auto;
+  }
+}
+
 

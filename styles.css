@@ -1038,3 +1038,86 @@ html { height: 100%; }
 }
 }
 
+.locations-section {
+  display: flex;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #8B0000;
+  color: black;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 2rem 1rem;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  margin: 0;
+  transform: rotate(180deg);
+  font-size: 1.5rem;
+}
+
+.view-button {
+  margin-top: 2rem;
+  padding: 10px 15px;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Content Area */
+.locations-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-box {
+  background-color: #ffe4c4;
+  padding: 2rem;
+}
+
+.about-section {
+  padding: 2rem;
+}
+
+.about-section h2 {
+  font-weight: bold;
+}
+
+.about-section a {
+  text-decoration: underline;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .locations-section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .sidebar h2 {
+    transform: none;
+  }
+
+  .view-button {
+    margin-top: 1rem;
+  }
+}
