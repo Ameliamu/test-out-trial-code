@@ -1121,3 +1121,70 @@ html { height: 100%; }
     margin-top: 1rem;
   }
 }
+
+.error-box-1 {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  
+
+}
+
+.p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ 
+}
+.error-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+
+.error-box-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.error-box-3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+  color: #acacac;
+  
+}
+
+@media (max-width: 768px) {
+
+  .error-box {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  
+  }
+
+  .error-box-1 {
+    display: flex;
+    justify-content: center;
+    height: 490px;
+    
+  }
+
+  .error-box-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+.error-box-3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  color: #acacac;
+  
+}
+
+}
