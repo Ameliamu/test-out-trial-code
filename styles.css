@@ -1156,35 +1156,34 @@ html { height: 100%; }
   
 }
 
-@media (max-width: 768px) {
-
-  .error-box {
-  margin-top: 150px;
-  display: flex;
-  justify-content: center;
-  
-  }
-
+@media screen and (max-width: 768px) {
   .error-box-1 {
-    display: flex;
-    justify-content: center;
-    height: 490px;
-    
+    height: auto; 
+    flex-direction: column;
   }
 
-  .error-box-2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+  .p {
+    font-size: 0.9rem; 
+  }
+
+  .error-box-3 {
+    margin-top: 3vh;
+    font-size: 0.85rem;
+    padding: 0 10px; 
+  }
 }
 
 
-.error-box-3 {
-  display: flex;
-  justify-content: center;
-  margin-top: 140px;
-  color: #acacac;
-  
-}
+@media screen and (max-width: 480px) {
+  .error-box-1 {
+    padding: 30px 10px;
+  }
 
+  .p {
+    font-size: 0.8rem;
+  }
+
+  .error-box-3 {
+    font-size: 0.75rem;
+  }
 }
